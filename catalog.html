@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav">
+        <a class="site-header__site-logo">
+          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+        </a>
+        <ul class="navigation">
+         <li><a href="info.html">Информация</a></li>
+         <li><a href="news.html">Новости</a></li>
+         <li><a href="price.html">Прайс-лист</a></li>
+         <li><a href="catalog.html">Магазин</a></li>
+         <li><a href="contacts.html">Контакты</a></li>
+       </ul>
+       <ul class="navigation navigation--user-navigation">
+         <li class="login-link">Вход</li>
+       </ul>
+      </nav>
+    </header>
+    <main class="site-main">
+      <h1 class="visually-hidden">Каталог продукции</h1>
+      <section class="products">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item">
+            <a href='#'>Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href='#'>Магазин</a>
+          </li>
+            <li class="breadcrumbs__item">
+            <a href='#'>Средства для ухода</a>
+          </li>
+        </ul>
+      </div>
+
+      <section class="filter">
+        <h2 class="visually-hidden">Сортировка по категориям</h2>
+        <form>
+          <fieldset class="filter__fieldset filter__fieldset--producers">
+            <legend class="filter__legend">Производители :</legend>
+            <ul class="filter__items">
+
+              <li class="filter__item">
+                <input class="filter__input" type="checkbox" name="producers" id="producers-input-1">
+                <label class="filter__label" for="producers-input-1">baxter of california</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="checkbox" name="producers" id="producers-input-2">
+                <label class="filter__label" for="producers-input-2">Mr Natty</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="checkbox" name="producers" id="producers-input-3">
+                <label class="filter__label" for="producers-input-3">Suavecito</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="checkbox" name="producers" id="producers-input-4">
+                <label class="filter__label" for="producers-input-4">Malin+Goetz</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="checkbox" name="producers" id="producers-input-5">
+                <label class="filter__label" for="producers-input-5">Murray's</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="checkbox" name="producers" id="producers-input-6">
+                <label class="filter__label" for="producers-input-6">American Crew</label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="filter__fieldset filter__fieldset--category">
+            <legend class="filter__legend">Группы товаров :</legend>
+            <ul class="filter__items">
+
+              <li class="filter__item">
+                <input class="filter__input" type="radio" name="category" id="category-input-1">
+                <label class="filter__label" for="category-input-1">Бритвенные принадлежности</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="radio" name="category" id="category-input-2">
+                <label class="filter__label" for="category-input-2">Средства для ухода</label>
+              </li>
+
+              <li class="filter__item">
+                <input class="filter__input" type="radio" name="category" id="category-input-3">
+                <label class="filter__label" for="category-input-3">Аксессуары</label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <button class="btn-original filter__btn" type='button'>Показать</button>
+        </form>
+      </section>
+      </section>
+    </main>
+
+
+  </body>
+</html>
