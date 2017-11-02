@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-  </head>
-  <body>
-    <header class="site-header">
-      <nav class="site-nav">
-        <a class="site-header__site-logo">
-          <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
-        </a>
-        <ul class="navigation">
-         <li><a href="info.html">Информация</a></li>
-         <li><a href="news.html">Новости</a></li>
-         <li><a href="price.html">Прайс-лист</a></li>
-         <li><a href="catalog.html">Магазин</a></li>
-         <li><a href="contacts.html">Контакты</a></li>
-       </ul>
-       <ul class="navigation navigation--user-navigation">
-         <li class="login-link">Вход</li>
-       </ul>
-      </nav>
-    </header>
-    <main class="site-main">
-      <h1 class="visually-hidden">Каталог продукции</h1>
-      <section class="products">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Барбершоп</title>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="site-header__site-logo">
+        <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
+      </a>
+      <ul class="navigation">
+        <li><a href="info.html">Информация</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="price.html">Прайс-лист</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="navigation navigation--user-navigation">
+        <li class="login-link">Вход</li>
+      </ul>
+    </nav>
+  </header>
+  <main class="site-main">
+    <h1 class="visually-hidden">Каталог продукции</h1>
+    <section class="products">
       <div class="breadcrumbs">
         <ul class="breadcrumbs__items">
           <li class="breadcrumbs__item">
@@ -33,7 +35,7 @@
           <li class="breadcrumbs__item">
             <a href='#'>Магазин</a>
           </li>
-            <li class="breadcrumbs__item">
+          <li class="breadcrumbs__item">
             <a href='#'>Средства для ухода</a>
           </li>
         </ul>
@@ -184,9 +186,41 @@
 
         </ul>
       </section>
-      </section>
-    </main>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__contacts">
+      Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      <a href="map.html">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+    </p>
+    <div class="site-footer__social social">
+      <b>Давайте дружить!</b>
+      <ul>
+        <li><a class="btn-social social__btn" href="#">Вконтакте</a></li>
+        <li><a class="btn-social social__btn" href="#">Фейсбук</a></li>
+        <li><a class="btn-social social__btn" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <p class="site-footer__copyright">
+      <b>Разработано:</b>
+      <a class="btn-original" href="https://htmlacademy.ru">HTML Academy</a>
+    </p>
+  </footer>
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p>Введите свой логин и пароль.</p>
+    <!-- Здесь будет форма -->
+    <span class="modal-close">x</span>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <span class="modal-close">x</span>
+  </section>
 
 
-  </body>
+</body>
+
 </html>
