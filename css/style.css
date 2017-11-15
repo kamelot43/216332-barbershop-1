@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/ptsansnarrow.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("../fonts/ptsansnarrowbold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  background-image: url("../img/bg-index.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*ШАПКА САЙТА. НАВИГАЦИЯ*/
+
+.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation__lnk {
+  font: inherit;
+  color: inherit;
+}
+
+.site-header {
+  background-color: #000000;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ. ПРЕИМУЩЕСТВА*/
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features p {
+  margin: 0;
+  padding: 0;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ. НОВОСТИ*/
+.news__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gallery__button {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ. ЗАПИСЬ*/
+
+.contacts__title,
+.appointment__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.appointment__btn {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+
+/*ВСПОМОГАТЕЛЬНЫЙ БЛОК*/
+.content-wrapper {
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("../img/noice_bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.button-original {
+  color: inherit; /*ВРЕМЕННО*/
+}
