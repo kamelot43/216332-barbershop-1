@@ -46,6 +46,11 @@ a {
   text-decoration: none;
 }
 
+/*ВРЕМЕННО*/
+.disable {
+  display: none;
+}
+
 /*ШАПКА САЙТА. НАВИГАЦИЯ*/
 
 .navigation {
@@ -115,6 +120,60 @@ a {
   border: none;
   background-color: transparent;
 }
+
+/*ПОДВАЛ САЙТА*/
+
+.site-footer {
+  background-color: #222222;
+  background-image: url("../img/footer_bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.site-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__lnk {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/*МОДАЛЬНОЕ ОКНО*/
+
+.modal {
+  color: #000000;
+  background-color: #f8f5f2;
+  background-image: url("../img/noice_bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal__lnk--restore {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.modal__btn,
+.modal__toggle {
+  border: none;
+  font: inherit;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+
+
+
 
 /*ВСПОМОГАТЕЛЬНЫЙ БЛОК*/
 .content-wrapper {

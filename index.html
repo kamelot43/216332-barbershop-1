@@ -136,11 +136,12 @@
   <footer class="site-footer">
     <p class="site-footer__contacts">
       Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-      <a href="map.html">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+
+      <a class="site-footer__lnk" href="map.html">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
     </p>
     <div class="site-footer__social social">
       <b>Давайте дружить!</b>
-      <ul>
+      <ul class="site-footer__list">
         <li><a class="btn-social social__btn" href="#">Вконтакте</a></li>
         <li><a class="btn-social social__btn" href="#">Фейсбук</a></li>
         <li><a class="btn-social social__btn" href="#">Инстаграм</a></li>
@@ -148,12 +149,12 @@
     </div>
     <p class="site-footer__copyright">
       <b>Разработано:</b>
-      <a class="btn-original" href="https://htmlacademy.ru">HTML Academy</a>
+      <a class="button-original" href="https://htmlacademy.ru">HTML Academy</a>
     </p>
   </footer>
 
-  <section class="modal modal--login">
-    <h2>Личный кабинет</h2>
+  <section class="modal disable">
+    <h2 class="modal__title">Личный кабинет</h2>
     <p>Введите свой логин и пароль.</p>
     <form class="modal__form modal__form--login" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal__item">
@@ -179,7 +180,7 @@
     <button class="modal__toggle" type="button">Закрыть</button>
   </section>
 
-  <section class="modal modal--map">
+  <section class="modal modal--map disable">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p>
       <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
