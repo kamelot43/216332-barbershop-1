@@ -42,6 +42,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+  background-color: #f9f6f3;
+  background-image: url("../img/noice_bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 a {
   text-decoration: none;
 }
@@ -54,30 +62,78 @@ a {
 /*ШАПКА САЙТА. НАВИГАЦИЯ*/
 
 .navigation {
+  display: flex;
+  width: 620px;
   margin: 0;
   padding: 0;
   list-style: none;
+  outline: 2px solid orange;
+}
+
+.navigation--user-navigation {
+  width: 140px;
+  justify-content: flex-end;
 }
 
 .navigation__lnk {
-  font: inherit;
+  display: block;
+  padding: 25px 20px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   color: inherit;
+  outline: 2px solid green;
 }
 
 .site-header {
+  color: #ffffff;
+}
+
+.site-header__site-logo {
+  order: 2;
+  outline: 2px solid gold;
+}
+
+.site-header__wrapper {
+  width: 100%;
+  margin-bottom: 65px;
   background-color: #000000;
+}
+
+.site-header__wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 /*ОСНОВНОЙ КОНТЕНТ. ПРЕИМУЩЕСТВА*/
 
 .features__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.features__item {
+  width: 300px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  text-align: center;
+  outline: 2px solid orange;
+}
+
 .features__title {
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
   font-size: 30px;
   line-height: 42px;
@@ -86,6 +142,58 @@ a {
 .features p {
   margin: 0;
   padding: 0;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ. ХЛЕБНЫЕ КРОШКИ*/
+
+.breadcrumbs__title {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-weight: 20px;
+  color: inherit;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ. ФИЛЬТР*/
+
+.filter {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.filter__fieldset {
+  border: none;
+}
+
+.filter__legend {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filter__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter__btn {
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
 }
 
 /*ОСНОВНОЙ КОНТЕНТ. НОВОСТИ*/
@@ -100,6 +208,23 @@ a {
   color: inherit;
   text-transform: uppercase;
   border: none;
+  background-color: transparent;
+}
+
+/*ОСНОВНОЙ КОНТЕНТ. ТОВАР*/
+.goods {
+  line-height: 18px;
+}
+
+.goods__lnk {
+  font: inherit;
+  color: inherit;
+}
+
+.goods__btn {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
   background-color: transparent;
 }
 
@@ -176,6 +301,12 @@ a {
 
 
 /*ВСПОМОГАТЕЛЬНЫЙ БЛОК*/
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .content-wrapper {
   color: #000000;
   background-color: #f8f5f2;

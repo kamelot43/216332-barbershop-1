@@ -6,14 +6,28 @@
   <title>Барбершоп «Бородинский»</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+
+  <!--<style>
+  HTML {
+    background: url( 'img/1.jpg' ) 50% 0 no-repeat;
+  }
+
+  BODY {
+    opacity: .5;
+  }
+</style>-->
 </head>
 
 <body>
   <header class="site-header">
+
+
     <nav class="site-nav">
       <a class="site-header__site-logo" tabindex="0">
         <img src="img/logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
       </a>
+        <div class="site-header__wrapper">
+          <div class="container">
       <ul class="navigation">
         <li class="navigation__item">
           <a class="navigation__lnk" href="info.html">Информация</a>
@@ -35,30 +49,37 @@
           <a class="navigation__lnk" href="login.html">Вход</a>
         </li>
       </ul>
+    </div>
+    </div>
     </nav>
+
+
   </header>
   <main class="site-main">
     <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 
     <section class="features">
+      <div class="container">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__list">
         <li class="features__item">
           <h3 class="features__title">Быстро</h3>
           <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
         </li>
-        <li class="features-item">
+        <li class="features__item">
           <h3 class="features__title">Круто</h3>
           <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
         </li>
-        <li class="features-item">
+        <li class="features__item">
           <h3 class="features__title">Дорого</h3>
           <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </li>
       </ul>
+    </div>
     </section>
 
     <div class="content-wrapper">
+      <div class="container">
     <section class="news">
       <h2>Новости</h2>
       <ul class="news__list">
@@ -85,8 +106,10 @@
       <button class="button-original gallery__button ">Вперед</button>
     </section>
   </div>
+  </div>
 
     <div class="content-wrapper">
+      <div class="container">
     <section class="contacts">
       <h2 class="contacts__title">Контактная информация</h2>
       <p>
@@ -128,6 +151,7 @@
 
       </form>
     </section>
+  </div>
   </div>
 
 
