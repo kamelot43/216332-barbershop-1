@@ -81,14 +81,14 @@
     <div class="content-wrapper">
       <div class="container">
     <section class="news">
-      <h2>Новости</h2>
+      <h2 class="news__title">Новости</h2>
       <ul class="news__list">
         <li class="news__item">
-          <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+          <p class="news__descr">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
           <time datetime="2016-01-11">11 января</time>
         </li>
         <li class="news__item">
-          <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+          <p class="news__descr">В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
           <time datetime="2016-01-18">18 января</time>
         </li>
       </ul>
@@ -99,7 +99,7 @@
       <h2 class="gallery__title">Фотогалерея</h2>
       <figure class="gallery-content">
         <a href="#">
-          <img src="img/index__gallery.jpg" width="328" height="164" alt="Интерьер">
+          <img src="img/index__gallery.jpg" width="300" height="164" alt="Интерьер">
         </a>
       </figure>
       <button class="button-original gallery__button ">Назад</button>
@@ -112,10 +112,10 @@
       <div class="container">
     <section class="contacts">
       <h2 class="contacts__title">Контактная информация</h2>
-      <p>
+      <p class="contacts__descr">
         Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br> Телефон: +7 (812) 666-02-66
       </p>
-      <p>
+      <p class="contacts__descr">
         Время работы:<br> пн—пт: с 10:00 до 22:00<br> сб—вс: с 10:00 до 19:00
       </p>
       <a class="button-original contacts__button" href="map.html">Как проехать</a>
@@ -128,23 +128,23 @@
       <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appointment__item">
 
-          <label for="appointment-date">дата</label>
-          <input id='appointment-date' type='text' value="" placeholder="08.10.2017">
+          <label class="appointment__label" for="appointment-date">дата</label>
+          <input class="appointment__input" id='appointment-date' type='text' value="" placeholder="08.10.2017">
         </p>
 
         <p class="appointment__item">
-          <label for="appointment-time">время</label>
-          <input id='appointment-time' type='text' value="" placeholder="10:00">
+          <label class="appointment__label"  for="appointment-time">время</label>
+          <input class="appointment__input" id='appointment-time' type='text' value="" placeholder="10:00">
         </p>
 
         <p class="appointment__item">
-          <label for="appointment-name">ваше имя</label>
-          <input id='appointment-name' type='text' value="" placeholder="Username">
+          <label class="appointment__label"  for="appointment-name">ваше имя</label>
+          <input class="appointment__input" id='appointment-name' type='text' value="" placeholder="Username">
         </p>
 
         <p class="appointment__item">
-          <label for="appointment-phone">ваше имя</label>
-          <input id='appointment-phone' type='text' value="" placeholder="+ 7 978 123-45-67">
+          <label class="appointment__label"  for="appointment-phone">телефон</label>
+          <input class="appointment__input" id='appointment-phone' type='text' value="" placeholder="+ 7 978 123-45-67">
         </p>
 
         <button class="button-original appointment__btn" type="submit">Отправить</button>

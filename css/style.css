@@ -115,6 +115,10 @@ a {
 
 /*ОСНОВНОЙ КОНТЕНТ. ПРЕИМУЩЕСТВА*/
 
+.features {
+  margin-bottom: 80px;
+}
+
 .features__list {
   display: flex;
   justify-content: space-between;
@@ -143,6 +147,8 @@ a {
   margin: 0;
   padding: 0;
 }
+
+
 
 /*ОСНОВНОЙ КОНТЕНТ. ХЛЕБНЫЕ КРОШКИ*/
 
@@ -197,18 +203,114 @@ a {
 }
 
 /*ОСНОВНОЙ КОНТЕНТ. НОВОСТИ*/
+
+.contacts__title,
+.appointment__title,
+.news__title,
+.gallery__title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.appointment__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.appointment__input {
+  width: 140px;
+  padding: 7px;
+  margin-top: 9px;
+  font: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+}
+
+.appointment__item {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
+}
+
+.appointment-info {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.appointment__btn {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}
+
+.appointment {
+  width: 300px;
+  min-height: 340px;
+  outline: 2px solid gold;
+}
+
+.news {
+  width: 380px;
+  min-height: 320px;
+  outline: 2px solid gold;
+}
+
 .news__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.news__item {
+  margin-bottom: 20px;
+}
+
+.news__descr {
+  margin: 0;
+  padding: 0;
+}
+
+.news__item time {
+  text-transform: none;
+}
+
+.gallery {
+  width: 300px;
+  outline: 2px solid gold;
+}
+
+
+.gallery-content {
+  margin: 0;
+  padding: 0;
+}
 .gallery__button {
   font: inherit;
   color: inherit;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+}
+
+.contacts {
+  width: 330px;
+  outline: 2px solid gold;
+}
+
+.contacts__descr {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 /*ОСНОВНОЙ КОНТЕНТ. ТОВАР*/
@@ -228,23 +330,8 @@ a {
   background-color: transparent;
 }
 
-/*ОСНОВНОЙ КОНТЕНТ. ЗАПИСЬ*/
 
-.contacts__title,
-.appointment__title {
-  margin: 0;
-  padding: 0;
-  font-size: 30px;
-  line-height: 42px;
-}
 
-.appointment__btn {
-  font: inherit;
-  color: inherit;
-  text-transform: uppercase;
-  border: none;
-  background-color: transparent;
-}
 
 /*ПОДВАЛ САЙТА*/
 
@@ -309,6 +396,21 @@ a {
 
 .content-wrapper {
   color: #000000;
+}
+
+.content-wrapper:first-of-type {
+  margin-bottom: 37px;
+}
+
+.content-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 52px;
+  padding-left: 80px;
+  padding-right: 80px;
+  box-sizing: border-box;
+
   background-color: #f8f5f2;
   background-image: url("../img/noice_bg.jpg");
   background-position: 0 0;
