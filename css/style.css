@@ -336,22 +336,58 @@ a {
 /*ПОДВАЛ САЙТА*/
 
 .site-footer {
+  margin-top: 65px;
+  padding-top: 55px;
   background-color: #222222;
   background-image: url("../img/footer_bg.jpg");
   background-position: top center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+
+}
+
+.site-footer .container {
+  display: flex;
+
+}
+
+.site-footer__contacts {
+  margin: 0;
+  padding: 0;
+  width: 310px;
+  outline: 2px solid gold;
+}
+
+.site-footer__social {
+  margin-left: 90px;
 }
 
 .site-footer__list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
+  margin-top: 20px;
   padding: 0;
   list-style: none;
+}
+
+.site-footer__copyright {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  width: 140px;
+  outline: 2px solid gold;
 }
 
 .site-footer__lnk {
   color: inherit;
   text-decoration: underline;
 }
+
+.social {
+  width: 140px;
+  outline: 2px solid green;
+}
+
 
 /*МОДАЛЬНОЕ ОКНО*/
 
@@ -419,4 +455,12 @@ a {
 
 .button-original {
   color: inherit; /*ВРЕМЕННО*/
+}
+
+.btn-social {
+  display: block;
+  font-size: 0;
+  width: 42px;
+  height: 42px;
+  outline: 2px solid gold;
 }
