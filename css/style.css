@@ -38,7 +38,7 @@ body {
 
   background-color: #000000;
   background-image: url("../img/bg-index.jpg");
-  background-position: top center;
+  background-position: center 40px;
   background-repeat: no-repeat;
 }
 
@@ -57,6 +57,10 @@ a {
 /*ВРЕМЕННО*/
 .disable {
   display: none;
+}
+
+img {
+  vertical-align: bottom;
 }
 
 /*ШАПКА САЙТА. НАВИГАЦИЯ*/
@@ -169,7 +173,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 67px;
 }
 
 .inner-page .site-nav {
@@ -336,12 +340,21 @@ a {
 
 .appointment__input {
   width: 140px;
-  padding: 7px;
+  padding: 7px 7px 7px 15px;
   margin-top: 9px;
   font: inherit;
   color: inherit;
   box-sizing: border-box;
   border: 2px solid #000000;
+}
+
+.appointment__input:focus {
+  outline: none;
+  border: 2px solid #663d15;
+}
+
+.appointment__label {
+  padding-left: 16px;
 }
 
 .appointment__item {
@@ -359,6 +372,8 @@ a {
 }
 
 .appointment__btn {
+  margin-top: 12px;
+  margin-left: 88px;
   font: inherit;
   color: inherit;
   text-transform: uppercase;
@@ -369,7 +384,6 @@ a {
 .appointment {
   width: 300px;
   min-height: 340px;
-  outline: 2px solid gold;
 }
 
 .news {
@@ -430,14 +444,31 @@ a {
   text-transform: uppercase;
   border: none;
   background-color: transparent;
-  margin-top: 33px;
+  margin-top: 40px;
   margin-left: 25px;
   margin-right: 22px;
 }
 
 .contacts {
+  position: relative;
   width: 330px;
-  outline: 2px solid gold;
+}
+
+.contacts::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 278px;
+  top:15px;
+  right: -60px;
+  background-image: url("../img/shadow.png");
+  background-repeat: no-repeat;
+}
+
+.contacts__btn {
+  margin-top: 3px;
+  margin-right: 18px;
 }
 
 .contacts__descr {
@@ -582,13 +613,25 @@ width: 220px;
 /*ПОДВАЛ САЙТА*/
 
 .site-footer {
+  position: relative;
   margin-top: 65px;
-  padding-top: 55px;
+  padding-top: 60px;
+  padding-bottom: 38px;
   background-color: #222222;
   background-image: url("../img/footer_bg.jpg");
   background-position: top center;
   background-repeat: repeat;
+}
 
+.site-footer::before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 41px;
+  width: 100%;
+  top: 0;
+  background-image: url("../img/footer_shadow.png");
+  background-repeat: repeat;
 }
 
 .inner-page .site-footer {
@@ -604,7 +647,6 @@ width: 220px;
   margin: 0;
   padding: 0;
   width: 310px;
-  outline: 2px solid gold;
 }
 
 .site-footer__social {
@@ -615,7 +657,7 @@ width: 220px;
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0;
   list-style: none;
 }
@@ -624,8 +666,8 @@ width: 220px;
   margin: 0;
   margin-left: auto;
   padding: 0;
-  width: 140px;
-  outline: 2px solid gold;
+  width: 145px;
+  text-align: center;
 }
 
 .site-footer__lnk {
@@ -633,9 +675,13 @@ width: 220px;
   text-decoration: underline;
 }
 
+.site-footer__btn {
+  margin-top: 13px;
+}
+
 .social {
   width: 140px;
-  outline: 2px solid green;
+  text-align: center;
 }
 
 
@@ -685,7 +731,7 @@ width: 220px;
 }
 
 .content-wrapper:first-of-type {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .content-wrapper .container {
@@ -723,5 +769,35 @@ width: 220px;
   font-size: 0;
   width: 42px;
   height: 42px;
-  outline: 2px solid gold;
+  background-color: #000000;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.btn-social:hover {
+  background-color: #ffffff;
+}
+
+.btn-social--vk {
+  background-image: url(../img/vk.svg);
+}
+
+.btn-social--vk:hover {
+  background-image: url(../img/vk-hover.svg);
+}
+
+.btn-social--fb {
+  background-image: url(../img/facebook.svg);
+}
+
+.btn-social--fb:hover {
+  background-image: url(../img/facebook-hover.svg);
+}
+
+.btn-social--instagram{
+  background-image: url(../img/instagram.svg);
+}
+
+.btn-social--instagram:hover {
+  background-image: url(../img/instagram-hover.svg);
 }

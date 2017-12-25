@@ -97,11 +97,11 @@
 
         <section class="gallery">
           <h2 class="gallery__title">Фотогалерея</h2>
-          <figure class="gallery-content">
+          <div class="gallery-content">
             <a href="#">
               <img src="img/index__gallery.jpg" width="286" height="164" alt="Интерьер">
             </a>
-          </figure>
+          </div>
           <button class="button-original gallery__button ">Назад</button>
           <button class="button-original gallery__button ">Вперед</button>
         </section>
@@ -118,8 +118,8 @@
           <p class="contacts__descr">
             Время работы:<br> пн—пт: с 10:00 до 22:00<br> сб—вс: с 10:00 до 19:00
           </p>
-          <a class="button-original contacts__button" href="map.html">Как проехать</a>
-          <a class="button-original contacts__button" href="contacts.html">Обратная связь</a>
+          <a class="button-original contacts__btn" href="map.html">Как проехать</a>
+          <a class="button-original contacts__btn" href="contacts.html">Обратная связь</a>
         </section>
 
         <section class="appointment">
@@ -139,12 +139,12 @@
 
             <p class="appointment__item">
               <label class="appointment__label" for="appointment-name">ваше имя</label>
-              <input class="appointment__input" id='appointment-name' type='text' value="" placeholder="Username">
+              <input class="appointment__input" id='appointment-name' type='text' value="" placeholder="Борода">
             </p>
 
             <p class="appointment__item">
               <label class="appointment__label" for="appointment-phone">телефон</label>
-              <input class="appointment__input" id='appointment-phone' type='text' value="" placeholder="+ 7 978 123-45-67">
+              <input class="appointment__input" id='appointment-phone' type='text' value="" placeholder="+7 123 456-78-90">
             </p>
 
             <button class="button-original appointment__btn" type="submit">Отправить</button>
@@ -160,21 +160,21 @@
   <footer class="site-footer">
     <div class="container">
       <p class="site-footer__contacts">
-        Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+        Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург,Б. Конюшенная,д. 19/8<br>
 
         <a class="site-footer__lnk" href="map.html">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
       </p>
       <div class="site-footer__social social">
         <b>Давайте дружить!</b>
         <ul class="site-footer__list">
-          <li><a class="btn-social social__btn" href="#">Вконтакте</a></li>
-          <li><a class="btn-social social__btn" href="#">Фейсбук</a></li>
-          <li><a class="btn-social social__btn" href="#">Инстаграм</a></li>
+          <li><a class="btn-social btn-social--vk social__btn" href="#">Вконтакте</a></li>
+          <li><a class="btn-social btn-social--fb social__btn" href="#">Фейсбук</a></li>
+          <li><a class="btn-social btn-social--instagram social__btn" href="#">Инстаграм</a></li>
         </ul>
       </div>
       <p class="site-footer__copyright">
         <b>Разработано:</b>
-        <a class="button-original" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button-original site-footer__btn" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </div>
   </footer>
