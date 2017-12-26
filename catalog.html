@@ -44,7 +44,7 @@
       </ul>
       <ul class="navigation navigation--user-navigation">
         <li class="navigation__item">
-          <a class="navigation__lnk" href="login.html">Вход</a>
+          <a class="navigation__lnk  navigation__lnk--enter" href="login.html">Вход</a>
         </li>
       </ul>
 
@@ -64,8 +64,8 @@
           <li class="breadcrumbs__item">
             <a href='#'>Магазин</a>
           </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__current-lnk" href='#'>Средства для ухода</a>
+          <li class="breadcrumbs__item breadcrumbs__item--current">
+            <a href='#'>Средства для ухода</a>
           </li>
         </ul>
       </div>
@@ -80,61 +80,61 @@
               <ul class="filter__list">
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="checkbox" name="baxter-of-california" id="producers-input-1">
-                  <label class="filter__label" for="producers-input-1">baxter of california</label>
+                  <input class="filter__input filter__input--checkbox  visually-hidden" type="checkbox" name="baxter-of-california" id="producers-input-1" checked>
+                  <label class="filter__label filter__label--checkbox" for="producers-input-1">baxter of california</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="checkbox" name="mr-natty" id="producers-input-2">
-                  <label class="filter__label" for="producers-input-2">Mr Natty</label>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="mr-natty" id="producers-input-2">
+                  <label class="filter__label filter__label--checkbox" for="producers-input-2">Mr Natty</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="checkbox" name="suavecito" id="producers-input-3">
-                  <label class="filter__label" for="producers-input-3">Suavecito</label>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="suavecito" id="producers-input-3">
+                  <label class="filter__label filter__label--checkbox" for="producers-input-3">Suavecito</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__inpu visually-hidden" type="checkbox" name="malin-goetz" id="producers-input-4">
-                  <label class="filter__label" for="producers-input-4">Malin+Goetz</label>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="malin-goetz" id="producers-input-4">
+                  <label class="filter__label filter__label--checkbox" for="producers-input-4">Malin+Goetz</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="checkbox" name="murrays" id="producers-input-5">
-                  <label class="filter__label" for="producers-input-5">Murray's</label>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="murrays" id="producers-input-5">
+                  <label class="filter__label filter__label--checkbox" for="producers-input-5">Murray's</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="checkbox" name="american-crew" id="producers-input-6">
-                  <label class="filter__label" for="producers-input-6">American Crew</label>
+                  <input class="filter__input filter__input--checkbox visually-hidden" type="checkbox" name="american-crew" id="producers-input-6">
+                  <label class="filter__label filter__label--checkbox" for="producers-input-6">American Crew</label>
                 </li>
 
               </ul>
             </fieldset>
 
             <fieldset class="filter__fieldset filter__fieldset--category">
-              <legend class="filter__legend">Группы товаров :</legend>
+              <legend class="filter__legend filter__legend--category">Группы товаров :</legend>
               <ul class="filter__list">
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="radio" name="category" id="category-input-1">
-                  <label class="filter__label" for="category-input-1">Бритвенные принадлежности</label>
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="category" id="category-input-1">
+                  <label class="filter__label filter__label--radio" for="category-input-1">Бритвенные принадлежности</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="radio" name="category" id="category-input-2">
-                  <label class="filter__label" for="category-input-2">Средства для ухода</label>
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="category" id="category-input-2">
+                  <label class="filter__label filter__label--radio" for="category-input-2">Средства для ухода</label>
                 </li>
 
                 <li class="filter__item">
-                  <input class="filter__input visually-hidden" type="radio" name="category" id="category-input-3">
-                  <label class="filter__label" for="category-input-3">Аксессуары</label>
+                  <input class="filter__input filter__input--radio visually-hidden" type="radio" name="category" id="category-input-3">
+                  <label class="filter__label filter__label--radio" for="category-input-3">Аксессуары</label>
                 </li>
 
               </ul>
             </fieldset>
 
-            <button class="btn-original filter__btn" type='submit'>Показать</button>
+            <button class="button-original button-original--lg filter__btn" type='submit'>Показать</button>
           </form>
         </section>
 

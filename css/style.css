@@ -13,13 +13,21 @@
 }
 
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -92,7 +100,7 @@ img {
 .navigation__lnk {
   display: block;
   position: relative;
-  padding: 25px 20px;
+  padding: 26px 20px;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -256,8 +264,29 @@ img {
   list-style: none;
 }
 
+.breadcrumbs__item {
+  position: relative;
+  margin-right: 42px;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -25px;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs__item--current {
+  color: #aba9a7;
+}
+
 .breadcrumbs a {
-  font-weight: 20px;
+  line-height: 20px;
   color: inherit;
 }
 
@@ -267,7 +296,6 @@ img {
   width: 220px;
   font-size: 14px;
   line-height: 18px;
-  outline: 2px solid gold;
 }
 
 .filter__fieldset {
@@ -275,6 +303,10 @@ img {
   padding: 0;
   padding-bottom: 30px;
   border: none;
+}
+
+.filter__fieldset--category {
+  padding-bottom: 32px;
 }
 
 .filter__legend {
@@ -285,6 +317,10 @@ img {
   line-height: 30px;
 }
 
+.filter__legend--category {
+  margin-bottom: 28px;
+}
+
 .filter__list {
   margin: 0;
   padding: 0;
@@ -293,8 +329,42 @@ img {
 }
 
 .filter__label {
+  position: relative;
   display: block;
   margin-bottom: 19px;
+}
+
+.filter__label:hover,
+.filter__label:focus {
+  outline: none;
+  color: #663d15;
+}
+
+.filter__label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -45px;
+    top: -1px;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+.filter__label--checkbox::before {
+    background-image: url(../img/checkbox.png);
+}
+
+.filter__input--checkbox:checked + .filter__label--checkbox::before {
+    background-image: url(../img/checkbox-select.png);
+}
+
+.filter__label--radio::before {
+    background-image: url(../img/radio-off.png);
+}
+
+.filter__input--radio:checked + .filter__label--radio::before {
+    background-image: url(../img/radio-on.png);
 }
 
 .filter__btn {
@@ -762,6 +832,10 @@ width: 220px;
 .button-original:active {
   outline: none;
   background-color: #663d15;
+}
+
+.button-original--lg {
+  padding: 13px 28px;
 }
 
 .btn-social {
