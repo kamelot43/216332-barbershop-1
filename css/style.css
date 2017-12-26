@@ -376,7 +376,6 @@ img {
 
 .catalog {
   width: 700px;
-  outline: 2px solid gold;
 }
 
 .catalog__inner {
@@ -554,20 +553,26 @@ img {
 }
 .goods {
   display: flex;
-flex-direction: column;
-align-items: center;
-width: 220px;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
   padding-bottom: 20px;
   min-height: 286px;
   line-height: 18px;
   box-sizing: border-box;
-  outline: 2px solid gold;
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.goods:hover {
+  box-shadow: 0 5px 25px 0 rgba(0, 1, 1, 0.3);
 }
 
 .goods__title {
   margin: 0;
   padding: 0;
-  padding: 7px 15px;
+  padding: 9px 15px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .goods__title span {
@@ -593,8 +598,15 @@ width: 220px;
 
 .order {
   display: flex;
+  justify-content: space-between;
   width: 185px;
-  outline: 2px solid orange;
+}
+
+.order__price {
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  background-color: #e5e5e5;
 }
 
 
@@ -602,14 +614,18 @@ width: 220px;
   width: 195px;
   min-height: 65px; /*временно для сетки*/
   margin-right: auto;
+  margin-top: 22px;
 }
 
 .pagination__list {
   display: flex;
   margin: 0;
-
   padding: 0;
   list-style: none;
+}
+
+.pagination__btn {
+  margin-right: 7px;
 }
 
 .product {
@@ -705,7 +721,8 @@ width: 220px;
 }
 
 .inner-page .site-footer {
-  margin-top: 50px;
+  margin-top: 25px;
+  color: #ffffff;
 }
 
 .site-footer .container {
@@ -827,15 +844,29 @@ width: 220px;
   text-align: center;
 }
 
+.button-original--lg {
+  padding: 13px 28px;
+}
+
+.button-original--sm {
+  padding: 12px 18px;
+}
+
+.pagination__item--current .button-original {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .button-original:hover,
 .button-original:focus,
 .button-original:active {
   outline: none;
   background-color: #663d15;
+  color: #ffffff;
 }
 
-.button-original--lg {
-  padding: 13px 28px;
+.button-original--pg {
+  padding: 10px 18px;
 }
 
 .btn-social {
